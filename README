@@ -1,0 +1,4 @@
+sh-client:
+        openssl s_client -connect localhost:4433 -tls1_2 -cert /etc/ssl/dotty.su/desktop.dotty.su/newcert.pem -key /etc/ssl/dotty.su/desktop.dotty.su/newkey.pem
+sh-server:
+        openssl s_server -accept localhost:4433 -tls1_2 -cert /etc/ssl/dotty.su/desktop.dotty.su/newcert.pem -key /etc/ssl/dotty.su/desktop.dotty.su/newkey.pem
